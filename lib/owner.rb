@@ -63,11 +63,11 @@ class Owner
 
   def sell_pets
     @pets.each {|key, value| value.mood = "nervous"}
-    
+
   end
 
   def list_pets
-    @pets.inspect
+    "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
   end
 
 
