@@ -66,6 +66,10 @@ class Owner
     binding.pry
   end
 
+  def list_pets
+    @pets.inspect
+  end
+
 
   # code goes here
 end
