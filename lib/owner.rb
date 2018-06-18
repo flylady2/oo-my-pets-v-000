@@ -35,7 +35,7 @@ class Owner
   def buy_fish(name_of_fish)
     new_fish = Fish.new(name_of_fish)
     @pets[:fishes] << new_fish
-    binding.pry
+
   end
 
   def buy_cat(name_of_cat)
@@ -47,6 +47,13 @@ class Owner
     new_dog = Dog.new(name_of_dog)
     @pets[:dogs] << new_dog
   end
+
+  def walk_dogs
+    @pets[:dog].each do |dog|
+      dog.mood = "happy"
+    end
+  end
+
 
   # code goes here
 end
