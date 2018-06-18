@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :pets, :name
   @@all = []
@@ -29,6 +30,11 @@ class Owner
 
   def name
     @name = name
+  end
+
+  def buy_fisn(new_fish)
+    new_fish = Fish.new(name_of_fish)
+    @pets[:fishes] << new_fish
   end
 
   # code goes here
