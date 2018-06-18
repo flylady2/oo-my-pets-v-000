@@ -50,6 +50,7 @@ class Owner
 
   def walk_dogs
     @pets.each {|dogs, dog|
+      binding.pry
       dog.mood = "happy"}
 
   end
